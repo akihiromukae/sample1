@@ -1,7 +1,16 @@
 language: php
 php:
-  - '7.1'
-#  - '7.2'
+- '7.1'
+- '7.2'
 before_script:
-  - curl -s http://getcomposer.org/installer | php
-  - php composer.phar install
+- curl -s http://getcomposer.org/installer | php
+- php composer.phar install
+script:
+- mkdir -p build/logs
+- phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml
+  tests
+after_script:
+- php vendor/bin/coveralls -v
+notifications:
+  slack:
+    secure: OUxZu0RERUdpAO7SAcpcCn4CvuvbewXixXo9jh3MwzXN3vefFskxiIoTvKIpp0AZGSVsHYr4CV3PmFUzRsjNmcIutLy9YvZZ7F6In4jSuRxzL4PZlpHdCNvmoCnuXVOY1IRY6c88VTxLKg9y9TpDS/AnAu6PuNbVYINMEY//KoHBGckQV/J5Wa3GXE3xTA4lqsRDuOCjCAn9YpGFUjjYZbKW7dog6yrF1by1CF4ORBZc6y+MTqtlw0cDReR949V09DJot7S5+ZXABFK0mbHnB1ZRlM5GFbHVeh8Cps9trNMpGxFS+DuTD5IhBcsYvzWy1lL858Ixnk81pr9yotodI1/xiOHvv/g1EpDt7t62Lv4vmLwuqtIg/DxvMskaJt2z+ByInKYtDmzt0WluJ33BQjxVj++NQcCOZlSPzB+KSEFalf93Rj938b3xQ0csSFH2phVTO6oLpRlKrN3pUxJDoeDdbcIaqi/sLirhWTdu4D7lqny/dvtnLrOnzEA7lvVWrW0C7FdSVPxBrTwbaHbH3BbNr3ZmZ6sIJF92jk1uYVv+uJ/IOmBuXz46IT79Nz61stjIlVdCGjuEMVYHqPqQC7PeBjBaAq2yxCO6o/o84aORF+OG7vIaURJ1C6LptqtAWOOatosU9Ui5jdwjzadQ0gGckD+tIKZ+oXdWUjd97/E=
