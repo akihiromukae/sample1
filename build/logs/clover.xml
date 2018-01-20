@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1516456372">
+  <project timestamp="1516456372">
+    <file name="/Users/mukaeakihiro/test/sample1/src/HelloWorld.php">
+      <class name="HelloWorld" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </class>
+      <line num="4" type="method" name="get" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="6" type="stmt" count="1"/>
+      <line num="8" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="10" type="stmt" count="1"/>
+      <metrics loc="12" ncloc="12" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+    </file>
+    <metrics files="1" loc="12" ncloc="12" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+  </project>
+</coverage>

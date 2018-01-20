@@ -2,8 +2,13 @@
 <phpunit bootstrap="bootstrap.php" colors="true">
     <testsuite name="Application Test">
         <directory>src/</directory>
-        <logging>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
+    <logging>
+        <log type="coverage-clover" target="../build/logs/clover.xml"/>
     </logging>
     </testsuite>
+    <filter>
+        <whitelist>
+            <directory>../src</directory>
+        </whitelist>
+    </filter>
 </phpunit>
