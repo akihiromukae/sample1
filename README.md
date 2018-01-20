@@ -5,6 +5,7 @@ github
 ↓  
 travis   
 ↓  
+slack  
+↓  
 coveralls   
-
 
