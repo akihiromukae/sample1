@@ -1,3 +1,4 @@
 src_dir: ./
+repo_token: dHmZ60Id8ezpTr0BPjYwVaXKMfEOXLiGu
 coverage_clover: build/logs/clover.xml
 json_path: build/logs/coveralls-upload.json
