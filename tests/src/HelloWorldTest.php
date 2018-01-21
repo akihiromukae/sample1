@@ -6,13 +6,12 @@ class HelloWorldTest extends TestCase
 {
     public function testToString()
     {
-        $s = new HelloWorld();
         assertEquals('Hello World!', (string)(new HelloWorld()));
     }
 
     public function testHello() {
         $hw = new HelloWorld();
-        $hw->set('Hiii!');
-        assertEquals('Hiii!',$hw->get());
+        $hw->setStr('Hiii!');
+        assertEquals('Hiii!',$hw->getStr());
     }
 }

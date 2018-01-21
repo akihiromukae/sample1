@@ -6,16 +6,9 @@
 class HelloWorld
 {
     public $str = "Hello World!";
-    /**
-     * @return string
-     */
-    public function get(): string
-    {
-        return $this->str;
-    }
     public function __toString()
     {
-        return $this->get();
+        return $this->getStr();
     }
 
     /**
