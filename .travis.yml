@@ -12,7 +12,7 @@ script:
 - mkdir -p build/logs
 - phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml.dist tests
 - vendor/bin/phpcs --colors --standard=PSR2 src
-- phan -x --color src/HelloWorld.php
+- vendor/bin/phan -x --color src/HelloWorld.php
 after_script:
 - php vendor/bin/coveralls -v
 notifications:
