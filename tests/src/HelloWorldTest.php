@@ -6,11 +6,11 @@ class HelloWorldTest extends TestCase
 {
     public function testToString()
     {
-        assertEquals('Hello World!', (string)(new HelloWorld()));
+        assertEquals('Hello World!', (string)(new \Sample1\src\HelloWorld\HelloWorld()));
     }
 
     public function testHello() {
-        $hw = new HelloWorld();
+        $hw = new \Sample1\src\HelloWorld\HelloWorld();
         $hw->setStr('Hiii!');
         assertEquals('Hiii!',$hw->getStr());
     }
