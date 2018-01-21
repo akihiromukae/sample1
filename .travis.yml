@@ -6,8 +6,8 @@ before_script:
 #- curl -s http://getcomposer.org/installer | php
 #- php composer.phar install
 - pecl install ast-0.1.6
-- curl -L https://github.com/phan/phan/releases/download/0.10.3/phan.phar -o /usr/bin/phan
-- chmod 755 /usr/bin/phan
+#- curl -L https://github.com/phan/phan/releases/download/0.10.3/phan.phar -o /usr/bin/phan
+#- chmod 755 /usr/bin/phan
 script:
 - mkdir -p build/logs
 - phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml.dist tests
