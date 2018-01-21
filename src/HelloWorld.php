@@ -1,5 +1,5 @@
 <?php
-namespace Sample1\src\HelloWorld;
+namespace Sample1\src;
 
 /**
  * Class HelloWorld
