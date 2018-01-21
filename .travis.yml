@@ -8,7 +8,7 @@ before_script:
 script:
 - mkdir -p build/logs
 - phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml.dist tests
-- php vendor/bin/phpcs src
+- php vendor/bin/phpcs src --colors
 after_script:
 - php vendor/bin/coveralls -v
 notifications:

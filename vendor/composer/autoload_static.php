@@ -12,6 +12,9 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '2b9d0f43f9552984cfa82fee95491826' => __DIR__ . '/..' . '/sabre/event/lib/coroutine.php',
+        'd81bab31d3feb45bfe2f283ea3c8fdf7' => __DIR__ . '/..' . '/sabre/event/lib/Loop/functions.php',
+        'a1cce3d26cc15c00fcd0b3354bd72c88' => __DIR__ . '/..' . '/sabre/event/lib/Promise/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -31,12 +34,19 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
             'Symfony\\Component\\Filesystem\\' => 29,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
+            'Sabre\\Event\\' => 12,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'PhpParser\\' => 10,
             'PhpCoveralls\\' => 13,
+            'Phan\\' => 5,
+        ),
+        'M' => 
+        array (
+            'Microsoft\\PhpParser\\' => 20,
         ),
         'G' => 
         array (
@@ -48,6 +58,10 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'A' => 
+        array (
+            'AdvancedJsonRpc\\' => 16,
         ),
     );
 
@@ -86,6 +100,10 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
+        'Sabre\\Event\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/sabre/event/lib',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -94,9 +112,21 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
         'PhpCoveralls\\' => 
         array (
             0 => __DIR__ . '/..' . '/satooshi/php-coveralls/src',
+        ),
+        'Phan\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phan/phan/src/Phan',
+        ),
+        'Microsoft\\PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/microsoft/tolerant-php-parser/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -118,6 +148,10 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'AdvancedJsonRpc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/felixfbecker/advanced-json-rpc/lib',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -126,6 +160,13 @@ class ComposerStaticInitec7d2ab09df0e9cbceac788918125727
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
+            ),
+        ),
+        'J' => 
+        array (
+            'JsonMapper' => 
+            array (
+                0 => __DIR__ . '/..' . '/netresearch/jsonmapper/src',
             ),
         ),
     );

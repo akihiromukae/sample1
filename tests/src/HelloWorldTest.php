@@ -9,4 +9,10 @@ class HelloWorldTest extends TestCase
         $s = new HelloWorld();
         assertEquals('Hello World!', (string)(new HelloWorld()));
     }
+
+    public function testHello() {
+        $hw = new HelloWorld();
+        $hw->set('Hiii!');
+        assertEquals('Hiii!',$hw->get());
+    }
 }

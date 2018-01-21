@@ -1,17 +1,37 @@
 <?php
+
+/**
+ * Class HelloWorld
+ */
 class HelloWorld
 {
-    public $str = "Hi!";
+    public $str = "Hello World!";
+    /**
+     * @return string
+     */
     public function get(): string
     {
-        return "Hello World!";
+        return $this->str;
     }
     public function __toString()
     {
         return $this->get();
     }
-    public function set(String $str): string
+
+    /**
+     * @param string $str
+     */
+    public function setStr(string $str): void
     {
         $this->str = $str;
     }
+
+    /**
+     * @return string
+     */
+    public function getStr(): string
+    {
+        return $this->str;
+    }
+
 }

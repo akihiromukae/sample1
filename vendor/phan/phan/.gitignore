@@ -1,0 +1,9 @@
+vendor
+.phan/data
+composer.phar
+/build
+samples
+all_output.*
+*.swp
+/tags
+.phan/config.local.php
