@@ -1,4 +1,5 @@
 <?php
+namespace Sample1\src\HelloWorld;
 
 /**
  * Class HelloWorld
@@ -26,5 +27,4 @@ class HelloWorld
     {
         return $this->str;
     }
-
 }
