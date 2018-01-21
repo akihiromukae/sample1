@@ -9,7 +9,8 @@ before_script:
 script:
 - mkdir -p build/logs
 - phpunit --coverage-clover build/logs/clover.xml --configuration tests/phpunit.xml.dist tests
-- php vendor/bin/phpcs --colors --standard=PSR2 src
+- vendor/bin/phpcs --colors --standard=PSR2 src
+- vendor/bin/phan -x --color src/HelloWorld.php
 after_script:
 - php vendor/bin/coveralls -v
 notifications:
